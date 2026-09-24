@@ -5,88 +5,113 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>DevMarket</title>
+
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
+
         <header>
-            <div>
-                <a href="index.php">
-                    <img src="images/logo.jpg" alt="Логотип">
+            <div class="header-container">
+
+                <a href="index.php" class="logo">
+                    <img src="images/logo.png" alt="Логотип DevMarket">
                     DevMarket
                 </a>
+
+                <nav class="header-nav">
+                    <a href="index.php">Главная</a>
+                    <a href="about.php">О нас</a>
+                    <a href="products.php">Каталог</a>
+                    <a href="contacts.php">Контакты</a>
+                </nav>
+
+                <!-- Позже: поиск, корзина, профиль и кнопка входа -->
+
             </div>
-
-            <nav>
-                <a href="index.php">Главная</a>
-                <a href="about.php">О нас</a>
-                <a href="products.php">Каталог</a>
-                <a href="contacts.php">Контакты</a>
-            </nav>
-
-            <!-- Позже: поиск, корзина, профиль и кнопка входа -->
         </header>
 
+
         <main>
-            <section>
-                <div>
-                    <p>Маркетплейс для разработчиков</p>
 
-                    <h1>Всё для разработки в одном месте</h1>
+            <!-- Главный экран -->
+            <section class="hero">
+                <div class="hero-container">
 
-                    <p>
-                        Техника, аксессуары, книги и другие товары
-                        для комфортной работы и развития в IT.
-                    </p>
+                    <div class="hero-content">
 
-                    <a href="products.php">Перейти в каталог</a>
-                    <a href="about.php">Узнать больше</a>
+                        <p class="hero-label">
+                            Маркетплейс для разработчиков
+                        </p>
 
-                    <div>
-                        <p>Быстрая доставка</p>
-                        <p>Проверенные товары</p>
-                        <p>Поддержка 24/7</p>
+                        <h1>Всё для разработки в одном месте</h1>
+
+                        <p class="hero-description">
+                            Техника, аксессуары, книги и другие товары
+                            для комфортной работы и развития в IT.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="products.php" class="button button-primary">Перейти в каталог</a>
+                            <a href="about.php" class="button button-secondary">Узнать больше</a>
+                        </div>
+
+                        <div class="hero-features">
+                            <p>Быстрая доставка</p>
+                            <p>Проверенные товары</p>
+                            <p>Поддержка 24/7</p>
+                        </div>
+
                     </div>
-                </div>
 
-                <div>
-                    <img src="images/hero.png" alt="Рабочее место разработчика">
+                    <div class="hero-image">
+                        <img src="images/hero.png" alt="Рабочее место разработчика">
+                    </div>
+
                 </div>
             </section>
 
 
-            <section>
+            <!-- Категории -->
+            <section class="categories">
+
                 <h2>Популярные категории</h2>
 
-                <div>
-                    <a href="products.php?category=laptops">
+                <div class="categories-grid">
+
+                    <a href="products.php?category=laptops" class="category-card">
                         <article>
-                            <img src="images/laptops.jpg" alt="Ноутбуки">
+                            <img src="images/laptops.png" alt="Ноутбуки">
                             <h3>Ноутбуки</h3>
                         </article>
                     </a>
 
-                    <a href="products.php?category=accessories">
+                    <a href="products.php?category=accessories" class="category-card">
                         <article>
-                            <img src="images/accessories.jpg" alt="Аксессуары">
+                            <img src="images/accessories.png" alt="Аксессуары">
                             <h3>Аксессуары</h3>
                         </article>
                     </a>
 
-                    <a href="products.php?category=books">
+                    <a href="products.php?category=books" class="category-card">
                         <article>
-                            <img src="images/books.jpg" alt="Книги">
+                            <img src="images/books.png" alt="Книги">
                             <h3>Книги</h3>
                         </article>
                     </a>
+
                 </div>
             </section>
 
 
-            <section>
+            <!-- Популярные товары -->
+            <section class="popular">
+
                 <h2>Популярные товары</h2>
 
-                <div>
-                    <article>
+                <div class="products-grid">
+
+                    <article class="product-card">
                         <img src="images/product1.jpg" alt="Название товара">
                         <h3>Название товара</h3>
                         <p>Категория</p>
@@ -94,7 +119,7 @@
                         <a href="product.php?id=1">Подробнее</a>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="images/product2.jpg" alt="Название товара">
                         <h3>Название товара</h3>
                         <p>Категория</p>
@@ -102,7 +127,7 @@
                         <a href="product.php?id=2">Подробнее</a>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="images/product3.jpg" alt="Название товара">
                         <h3>Название товара</h3>
                         <p>Категория</p>
@@ -110,48 +135,64 @@
                         <a href="product.php?id=3">Подробнее</a>
                     </article>
 
-                    <article>
+                    <article class="product-card">
                         <img src="images/product4.jpg" alt="Название товара">
                         <h3>Название товара</h3>
                         <p>Категория</p>
                         <p>Цена</p>
                         <a href="product.php?id=4">Подробнее</a>
                     </article>
+
                 </div>
             </section>
 
 
-            <section>
-                <h2>Развивайся вместе с DevMarket</h2>
+            <!-- О DevMarket -->
+            <section class="about">
 
-                <p>
-                    DevMarket объединяет полезные товары и инструменты
-                    для разработчиков в одном месте.
-                </p>
+                <div class="about-container">
 
-                <a href="about.php">О DevMarket</a>
+                    <h2>Развивайся вместе с DevMarket</h2>
+
+                    <p>
+                        DevMarket объединяет полезные товары и инструменты
+                        для разработчиков в одном месте.
+                    </p>
+
+                    <a href="about.php">О DevMarket</a>
+
+                </div>
+
             </section>
+
         </main>
 
 
         <footer>
-            <div>
-                <a href="index.php">
-                    <img src="images/logo.jpg" alt="Логотип">
+
+            <div class="footer-container">
+
+                <a href="index.php" class="footer-logo">
+                    <img src="images/logo.jpg" alt="Логотип DevMarket">
                     DevMarket
                 </a>
+
+                <nav class="footer-nav">
+                    <a href="index.php">Главная</a>
+                    <a href="about.php">О нас</a>
+                    <a href="products.php">Каталог</a>
+                    <a href="contacts.php">Контакты</a>
+                </nav>
+
+                <!-- Позже: соц. сети -->
+
+                <p class="copyright">
+                    © 2026 DevMarket. Все права защищены.
+                </p>
+
             </div>
 
-            <nav>
-                <a href="index.php">Главная</a>
-                <a href="about.php">О нас</a>
-                <a href="products.php">Каталог</a>
-                <a href="contacts.php">Контакты</a>
-            </nav>
-
-            <!-- Позже: соц. сети -->
-
-            <p>© 2026 DevMarket. Все права защищены.</p>
         </footer>
+
     </body>
 </html>
