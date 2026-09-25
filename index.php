@@ -112,35 +112,35 @@
                 <div class="products-grid">
 
                     <article class="product-card">
-                        <img src="images/product1.jpg" alt="Название товара">
-                        <h3>Название товара</h3>
-                        <p>Категория</p>
-                        <p>Цена</p>
-                        <a href="product.php?id=1">Подробнее</a>
+                        <img class="product-image" src="images/product1.png" alt="MacBook Air M3">
+                        <h3>MacBook Air M3</h3>
+                        <p class="product-category">Ноутбуки</p>
+                        <p class="product-price">1299 €</p>
+                        <a class="product-link" href="product.php?id=1">Подробнее</a>
                     </article>
 
                     <article class="product-card">
-                        <img src="images/product2.jpg" alt="Название товара">
-                        <h3>Название товара</h3>
-                        <p>Категория</p>
-                        <p>Цена</p>
-                        <a href="product.php?id=2">Подробнее</a>
+                        <img class="product-image" src="images/product2.png" alt="Logitech MX Master 3S">
+                        <h3>Logitech MX Master 3S</h3>
+                        <p class="product-category">Аксессуары</p>
+                        <p class="product-price">109 €</p>
+                        <a class="product-link" href="product.php?id=2">Подробнее</a>
                     </article>
 
                     <article class="product-card">
-                        <img src="images/product3.jpg" alt="Название товара">
-                        <h3>Название товара</h3>
-                        <p>Категория</p>
-                        <p>Цена</p>
-                        <a href="product.php?id=3">Подробнее</a>
+                        <img class="product-image" src="images/product3.png" alt="Clean Code">
+                        <h3>Clean Code</h3>
+                        <p class="product-category">Книги</p>
+                        <p class="product-price">39 €</p>
+                        <a class="product-link" href="product.php?id=3">Подробнее</a>
                     </article>
 
                     <article class="product-card">
-                        <img src="images/product4.jpg" alt="Название товара">
-                        <h3>Название товара</h3>
-                        <p>Категория</p>
-                        <p>Цена</p>
-                        <a href="product.php?id=4">Подробнее</a>
+                        <img class="product-image" src="images/product4.png" alt="Keychron K2">
+                        <h3>Keychron K2</h3>
+                        <p class="product-category">Аксессуары</p>
+                        <p class="product-price">99 €</p>
+                        <a class="product-link" href="product.php?id=4">Подробнее</a>
                     </article>
 
                 </div>
@@ -173,7 +173,7 @@
             <div class="footer-container">
 
                 <a href="index.php" class="footer-logo">
-                    <img src="images/logo.jpg" alt="Логотип DevMarket">
+                    <img src="images/logo.png" alt="Логотип DevMarket">
                     DevMarket
                 </a>
 
